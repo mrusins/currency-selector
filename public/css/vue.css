@@ -1,0 +1,83 @@
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.block {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+    width: 500px;
+    margin: auto;
+
+}
+.items {
+    font-size: 23px;
+    font-weight: 400;
+    display: inline-flex;
+    padding: 6px 8px;
+    width: 150px;
+    height: 45px;
+    border-width: 1px;
+    border-color: rgb(154,154,154);
+    background-color: rgb(215,215,215);
+    color: rgb(33,73,111);
+}
+.checked-parent{
+    position: relative;
+}
+.delete-button {
+    background-color: rgb(47,47,47);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 125px;
+    top: -15px;
+}
+.del-text{
+    color: black;
+    width: 130px;
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="checkbox"]{
+    border-radius: 3px;
+    border: rgb(154,154,154);
+    border: 1px;
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: white;
+    width: 17px;
+    height: 17px;
+    border: none;
+    position: relative;
+}
+input[type="checkbox"]:checked {
+    background: white;
+}
+input[type="checkbox"]:checked:after {
+    content: "X";
+    color: rgb(255,2,15);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
